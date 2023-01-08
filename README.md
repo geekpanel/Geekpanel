@@ -35,4 +35,4 @@ How to transfer Geek Panel accounts from one server to another Geek Panel server
 
 Connect to your Linux server via SSH and run the following command as root:
 
-/gp/backup all full scp &ltRemoteIP&gt root &ltRemotePassword&gt 22 /backup
+/gp/backup all full scp RemoteIP root RemotePassword 22 /backup
