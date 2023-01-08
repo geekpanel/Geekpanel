@@ -8,3 +8,9 @@ Install Geek Panel (Lite) via command line:
 
 curl -o latest -L https://download.geekpanel.com && chmod +x latest && ./latest lite
 
+Demo:
+
+http://demo.geekpanel.com:2020
+
+https://demo.geekpanel.net/gp
+
