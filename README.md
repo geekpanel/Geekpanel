@@ -30,3 +30,9 @@ or
 /gp/restore filename.tar.gz
 
 Of course, you need to replace username with the actual cPanel username or filename.tar.gz for the account you want to restore. Also, make sure that the full cPanel backup is properly uploaded in the /backup directory on your server before starting the restoration process.
+__________________________________________________________________________________________
+How to transfer Geek Panel accounts from one server to another Geek Panel server?
+
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/backup all full scp <RemoteIP> root <RemotePassword> 22 /backup
