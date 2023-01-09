@@ -43,3 +43,14 @@ Connect to your Linux server via SSH and run the following command as root:
 Or
   
 /gp/scp all RemoteIP RemotePassword
+
+<h2>How to Copy Folder from Geek Panel Server to Remote Backup Server(Storage Box)?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/backup LocalFolderPath RemoteFolderPath
+
+Example:
+
+/gp/backup /home/ /backup/home/
+
+(Setup Schedule Backup Required via Dashboard)
