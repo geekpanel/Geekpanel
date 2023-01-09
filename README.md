@@ -54,3 +54,46 @@ Example:
 /gp/backup /home/ /backup/home/
 
 (Setup Schedule Backup Required via Dashboard)
+
+<h2>How to Restore Folder from Remote Backup Server(Storage Box) to Local Geek Panel Server?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/restore RemoteFolderPath LocalFolderPath
+
+Example:
+
+/gp/restore /backup/home/ /home/
+
+(Setup Schedule Backup Required via Dashboard)
+
+
+<h2>How to Copy Database from Current Server to Another?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/copydatabase DatabaseName RemoteIP RemotePassword
+
+<h2>How to Copy Database Table from Current Server to Another?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/copytable DatabaseName TableName RemoteIP RemotePassword
+
+<h2>How to Convert Database from MyISAM to InnoDB?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/myisam2innodb DatabaseName
+
+<h2>How to Convert Table from MyISAM to InnoDB?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+/gp/myisam2innodb DatabaseName TableName
+
+<h2>How do I switch between NGINX and Apache web server?</h2>
+Connect to your Linux server via SSH and run the following command as root:
+
+Switch to NGINX:
+
+/gp/nginx
+
+Switch to Apache:
+
+/gp/apache
